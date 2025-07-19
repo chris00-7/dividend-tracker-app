@@ -8,7 +8,14 @@ const totalAnnualIncome = (totalMonthlyIncome * 12).toFixed(2);
     <div>
       <h2>ETF Holdings</h2>
       <table>
-        <thead>
+   <p style={{ fontSize: '18px', fontWeight: 'bold', color: '#2c3e50' }}>
+  💰 Total Monthly Income: ${totalMonthlyIncome}
+</p>
+<p style={{ fontSize: '18px', fontWeight: 'bold', color: '#2c3e50' }}>
+  📆 Total Annual Income: ${totalAnnualIncome}
+</p>
+   
+  <thead>
           <tr>
             <th>ETF</th>
             <th>Yield (%)</th>
@@ -32,3 +39,5 @@ const totalAnnualIncome = (totalMonthlyIncome * 12).toFixed(2);
 export default ETFViewer;
 Add ETFViewer component with mock data
 Link ETFViewer.js to data.js for dynamic ticker and income display
+Display total monthly and annual dividend income in ETFViewer
+Style total income display with bold fonts and icons
