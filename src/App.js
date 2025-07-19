@@ -1,13 +1,15 @@
+
 import React from 'react';
+import Dashboard from './components/Dashboard';
 
 function App() {
   return (
     <div>
       <h1>Dividend Tracker Dashboard</h1>
-      {/* Dashboard and other components will go here */}
+      <Dashboard />
     </div>
   );
 }
 
 export default App;
-Create App.js as the main component
+Link Dashboard component to App.js
