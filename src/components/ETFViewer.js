@@ -8,8 +8,11 @@ const totalAnnualIncome = (totalMonthlyIncome * 12).toFixed(2);
     <div>
       <h2>ETF Holdings</h2>
       <table>
-   <h3 style={{ marginTop: '20px', color: '#2c3e50' }}>ETF Monthly Income Chart</h3>
-<ETFIncomeChart etfData={etfData} />
+   <div className="chart-panel">
+  <h3>📊 Monthly Income Breakdown</h3>
+  <ETFIncomeChart etfData={etfData} />
+</div>
+
 
   💰 Total Monthly Income: ${totalMonthlyIncome}
 </p>
