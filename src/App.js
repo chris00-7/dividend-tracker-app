@@ -15,6 +15,7 @@ function App() {
 }
 
 export default App;
-Fix App.js layout and remove extra component
+Render Simulator component in App.js
+
 
 
