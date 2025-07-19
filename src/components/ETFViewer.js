@@ -1,8 +1,9 @@
 import React from 'react';
 import { etfData } from '../utils/data';
-];
 
-function ETFViewer() {
+function ETFViewer() {const totalMonthlyIncome = etfData.reduce((acc, etf) => acc + etf.monthlyIncome, 0);
+const totalAnnualIncome = (totalMonthlyIncome * 12).toFixed(2);
+
   return (
     <div>
       <h2>ETF Holdings</h2>
