@@ -1,26 +1,38 @@
 import React from 'react';
 import { etfData } from '../utils/data';
+import ETFIncomeChart from './ETFIncomeChart';
+import ETFPieChart from './ETFPieChart/ETFPieChart';  // adjust path if needed
+import Summary from './Summary';
 
-function ETFViewer() {const totalMonthlyIncome = etfData.reduce((acc, etf) => acc + etf.monthlyIncome, 0);
-const totalAnnualIncome = (totalMonthlyIncome * 12).toFixed(2);
+function ETFViewer() {
+  const totalMonthlyIncome = etfData.reduce((acc, etf) => acc + etf.monthlyIncome, 0);
+  const totalAnnualIncome = (totalMonthlyIncome * 12).toFixed(2);
 
   return (
     <div>
       <h2>ETF Holdings</h2>
+
+      {/* Bar Chart Panel */}
+      <div className="chart-panel">
+        <h3>📊 Monthly Income Breakdown</h3>
+        <ETFIncomeChart etfData={etfData} />
+      </div>
+
+      {/* Pie Chart Panel */}
+      <div className="chart-panel">
+        <h3>🍕 Income Allocation by ETF</h3>
+        <ETFPieChart etfData={etfData} />
+      </div>
+
+      {/* Income Summary */}
+      <Summary
+        totalMonthlyIncome={totalMonthlyIncome}
+        totalAnnualIncome={totalAnnualIncome}
+      />
+
+      {/* ETF Table */}
       <table>
-   <div className="chart-panel">
-  <h3>📊 Monthly Income Breakdown</h3>
-  <ETFIncomeChart etfData={etfData} />
-</div>
-
-
-  💰 Total Monthly Income: ${totalMonthlyIncome}
-</p>
-<p style={{ fontSize: '18px', fontWeight: 'bold', color: '#2c3e50' }}>
-  📆 Total Annual Income: ${totalAnnualIncome}
-</p>
-   
-  <thead>
+        <thead>
           <tr>
             <th>ETF</th>
             <th>Yield (%)</th>
@@ -42,7 +54,4 @@ const totalAnnualIncome = (totalMonthlyIncome * 12).toFixed(2);
 }
 
 export default ETFViewer;
-Add ETFViewer component with mock data
-Link ETFViewer.js to data.js for dynamic ticker and income display
-Display total monthly and annual dividend income in ETFViewer
-Style total income display with bold fonts and icons
+
