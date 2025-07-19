@@ -4,7 +4,8 @@ import Simulator from './components/Simulator';
 import ETFViewer from './components/ETFViewer';
 
 function App() {
-  return (
+  return (<ETFViewer />
+
     <div>
       <h1>Dividend Tracker Dashboard</h1>
       <Dashboard />
