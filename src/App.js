@@ -1,3 +1,4 @@
+import './App.css';
 import React from 'react';
 import Dashboard from './components/Dashboard';
 import Simulator from './components/Simulator';
