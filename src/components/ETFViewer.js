@@ -1,9 +1,5 @@
 import React from 'react';
-
-const etfData = [
-  { name: 'JEPI', yield: 7.45, monthlyIncome: 45 },
-  { name: 'SCHD', yield: 3.7, monthlyIncome: 22 },
-  { name: 'VYM', yield: 3.2, monthlyIncome: 18 },
+import { etfData } from '../utils/data';
 ];
 
 function ETFViewer() {
@@ -34,3 +30,4 @@ function ETFViewer() {
 
 export default ETFViewer;
 Add ETFViewer component with mock data
+Link ETFViewer.js to data.js for dynamic ticker and income display
