@@ -1,7 +1,7 @@
 import React from 'react';
 import { etfData } from '../utils/data';
 import ETFIncomeChart from './ETFIncomeChart';
-import ETFPieChart from './ETFPieChart/ETFPieChart';  // adjust path if needed
+import ETFPieChart from './ETFPieChart';
 import Summary from './Summary';
 
 function ETFViewer() {
@@ -54,4 +54,5 @@ function ETFViewer() {
 }
 
 export default ETFViewer;
+
 
