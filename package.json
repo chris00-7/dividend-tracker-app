@@ -13,7 +13,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build"
   },
-  0"browserslist": {
+    "browserslist": {
     "production": [
       ">0.2%",
       "not dead",
