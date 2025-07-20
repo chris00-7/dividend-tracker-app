@@ -3,6 +3,7 @@ import React from 'react';
 import Dashboard from './components/Dashboard';
 import Simulator from './components/Simulator';
 import ETFViewer from './components/ETFViewer';
+import ETFChartPanel from './components/ETFChartPanel';
 
 function App() {
   return (
@@ -17,6 +18,14 @@ function App() {
       <section>
         <h2>Dashboard</h2>
         <Dashboard />
+        <ETFChartPanel
+          etfData={[
+            { ticker: 'QYLD', monthlyIncome: 60 },
+            { ticker: 'JEPI', monthlyIncome: 45 },
+            { ticker: 'XYLD', monthlyIncome: 38 },
+            { ticker: 'RYLD', monthlyIncome: 30 },
+          ]}
+        />
       </section>
 
       <section>
