@@ -13,8 +13,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build"
   },
-  "browserslist": {
-    "production": [
+  
+    "browserslist": {
+     "production": [
       ">0.2%",
       "not dead",
       "not op_mini all"
