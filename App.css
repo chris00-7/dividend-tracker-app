@@ -29,6 +29,8 @@ tr:hover {
   font-weight: bold;
   color: #2c3e50;
   margin-top: 12px;
+}
+
 .chart-panel {
   margin-top: 30px;
   padding: 16px;
@@ -43,3 +45,7 @@ tr:hover {
   margin-bottom: 12px;
 }
 
+.app-container {
+  padding: 24px;
+  font-family: Arial, sans-serif;
+}
