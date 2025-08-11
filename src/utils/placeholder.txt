@@ -1,2 +1,0 @@
-// Placeholder for utilities like calculators and API helpers
-Create src/utils folder with placeholder file
