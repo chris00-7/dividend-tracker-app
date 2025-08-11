@@ -1,3 +1,1 @@
-Js
-2. 📝 **Commit Message:**  
-Scroll down and in the commit message box, type:
+
